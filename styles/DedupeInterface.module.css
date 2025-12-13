@@ -384,6 +384,94 @@
     color: var(--foreground);
 }
 
+/* Algorithm Box */
+.algorithmBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: 0.75rem;
+    border: 1px solid var(--glass-border);
+}
+
+.algorithmStep {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.algorithmStep div {
+    flex: 1;
+}
+
+.algorithmStep strong {
+    color: var(--foreground);
+    font-size: 1rem;
+}
+
+.algorithmStep p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+}
+
+/* Feature Grid */
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.featureCard {
+    padding: 1.25rem;
+    background: var(--glass-highlight);
+    border-radius: 0.75rem;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.featureCard:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.featureIcon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.featureCard strong {
+    color: var(--foreground);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.featureCard p {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
 /* No Results */
 .noResults {
     text-align: center;

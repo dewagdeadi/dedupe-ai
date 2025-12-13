@@ -182,24 +182,89 @@ export default function DedupeInterface() {
                     <section className={styles.infoSection}>
                         <h2 className={styles.infoTitle}>Apa itu Deduplikasi.id?</h2>
                         <p className={styles.infoText}>
-                            Deduplikasi.id adalah aplikasi web gratis untuk menghapus data duplikat di file Excel dan CSV.
-                            Berbeda dengan tools lain, Deduplikasi.id menggunakan algoritma <strong>NLP (Natural Language Processing)</strong> dan <strong>Entity Linkage</strong> yang
-                            dapat mendeteksi duplikat yang tidak persis sama — seperti typo, spasi ganda, atau perbedaan format.
+                            <strong>Deduplikasi.id</strong> adalah aplikasi web gratis untuk mendeteksi dan menghapus data duplikat
+                            pada file Excel (.xlsx) dan CSV. Berbeda dengan tools konvensional yang hanya mencari kecocokan
+                            <strong> exact match</strong>, sistem ini menggunakan algoritma <strong>Natural Language Processing (NLP)</strong> dan
+                            <strong> Entity Linkage</strong> untuk mendeteksi duplikat yang <strong>mirip tapi tidak identik</strong>.
                         </p>
 
-                        <h3 className={styles.infoSubtitle}>Keunggulan Deduplikasi.id:</h3>
+                        <h3 className={styles.infoSubtitle}>🎯 Masalah yang Diselesaikan</h3>
+                        <p className={styles.infoText}>
+                            Data duplikat sering kali tidak persis sama. Tools tradisional akan melewatkan duplikat-duplikat seperti:
+                        </p>
                         <ul className={styles.featureList}>
-                            <li>✅ <strong>Gratis 100%</strong> — Tanpa biaya, tanpa batasan</li>
-                            <li>✅ <strong>Privasi Terjamin</strong> — Data diproses di browser, tidak dikirim ke server</li>
-                            <li>✅ <strong>NLP Cerdas</strong> — Tokenisasi, stopword removal, stemming otomatis</li>
-                            <li>✅ <strong>Pilih Data</strong> — Tentukan sendiri data mana yang dipertahankan</li>
-                            <li>✅ <strong>Cari & Filter</strong> — Cari duplikat dengan mudah</li>
+                            <li>📝 <strong>Typo & Spasi</strong> — "Budi Santoso" vs "Budi  Santoso"</li>
+                            <li>📱 <strong>Format Telepon</strong> — "081234567890" vs "0812-3456-7890" vs "+62 812..."</li>
+                            <li>📧 <strong>Variasi Email</strong> — "budi.santoso@" vs "budisantoso@"</li>
+                            <li>🏠 <strong>Alamat Singkat</strong> — "Jl. Sudirman No. 123" vs "Jl Sudirman 123"</li>
+                            <li>🏢 <strong>Nama Perusahaan</strong> — "PT Maju Jaya" vs "PT. Maju Jaya"</li>
                         </ul>
 
-                        <h3 className={styles.infoSubtitle}>Cara Menggunakan:</h3>
+                        <h3 className={styles.infoSubtitle}>🧠 Cara Kerja Algoritma</h3>
+                        <div className={styles.algorithmBox}>
+                            <div className={styles.algorithmStep}>
+                                <span className={styles.stepNumber}>1</span>
+                                <div>
+                                    <strong>NLP Preprocessing</strong>
+                                    <p>Tokenisasi → Hapus Stopwords (ID/EN) → Stemming → Normalisasi</p>
+                                </div>
+                            </div>
+                            <div className={styles.algorithmStep}>
+                                <span className={styles.stepNumber}>2</span>
+                                <div>
+                                    <strong>Similarity Scoring</strong>
+                                    <p>Dice Coefficient (60%) + Jaccard Similarity (40%)</p>
+                                </div>
+                            </div>
+                            <div className={styles.algorithmStep}>
+                                <span className={styles.stepNumber}>3</span>
+                                <div>
+                                    <strong>Entity Linkage</strong>
+                                    <p>Clustering data mirip berdasarkan threshold yang dapat diatur</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 className={styles.infoSubtitle}>✨ Fitur Utama</h3>
+                        <div className={styles.featureGrid}>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>🆓</span>
+                                <strong>Gratis 100%</strong>
+                                <p>Tanpa biaya, tanpa batasan, tanpa registrasi</p>
+                            </div>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>🔒</span>
+                                <strong>Privasi Terjamin</strong>
+                                <p>Data diproses di browser, tidak dikirim ke server</p>
+                            </div>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>🧠</span>
+                                <strong>NLP Cerdas</strong>
+                                <p>Tokenisasi, stopword removal, stemming otomatis</p>
+                            </div>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>🎚️</span>
+                                <strong>Threshold Adjustable</strong>
+                                <p>Atur sensitivitas deteksi (50%-100%)</p>
+                            </div>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>✅</span>
+                                <strong>Pilih Data</strong>
+                                <p>Tentukan sendiri data mana yang dipertahankan</p>
+                            </div>
+                            <div className={styles.featureCard}>
+                                <span className={styles.featureIcon}>🔍</span>
+                                <strong>Search & Filter</strong>
+                                <p>Cari dan filter grup duplikat</p>
+                            </div>
+                        </div>
+
+                        <h3 className={styles.infoSubtitle}>📋 Cara Menggunakan</h3>
                         <ol className={styles.stepsList}>
                             <li><strong>Upload File</strong> — Drag & drop atau klik untuk pilih file Excel/CSV</li>
                             <li><strong>Pilih Kolom</strong> — Tentukan kolom mana yang ingin dicek duplikatnya</li>
+                            <li><strong>Atur Threshold</strong> — Sesuaikan tingkat kemiripan (default 85%)</li>
+                            <li><strong>Aktifkan NLP</strong> — Mode NLP untuk deteksi cerdas (opsional)</li>
                             <li><strong>Analisis</strong> — Klik tombol untuk menemukan duplikat</li>
                             <li><strong>Pilih Data</strong> — Klik data yang ingin dipertahankan di setiap grup</li>
                             <li><strong>Download</strong> — Unduh file yang sudah bersih dari duplikat</li>
