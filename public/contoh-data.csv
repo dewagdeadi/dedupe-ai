@@ -1,16 +1,43 @@
-Nama,Email,Telepon,Alamat,Kota
-Budi Santoso,budi.santoso@email.com,081234567890,Jl. Sudirman No. 123,Jakarta
-Ahmad Hidayat,ahmad.hidayat@email.com,082345678901,Jl. Gatot Subroto No. 45,Bandung
-Budi  Santoso,budi.santoso@email.com,081234567890,Jl. Sudirman No 123,Jakarta
-Siti Rahayu,siti.rahayu@gmail.com,083456789012,Jl. Diponegoro No. 67,Surabaya
-Ahmad Hidayat,ahmad_hidayat@email.com,082345678901,Jl. Gatot Subroto 45,Bandung
-Dewi Lestari,dewi.lestari@email.com,084567890123,Jl. Merdeka No. 89,Medan
-Siti  Rahayu,siti.rahayu@gmail.com,083456789012,Jl. Diponegoro  67,Surabaya
-Rahmat Kurniawan,rahmat.k@email.com,085678901234,Jl. Ahmad Yani No. 12,Semarang
-Dewi Lestari,dewilestari@email.com,084567890123,Jl. Merdeka 89,Medan
-Andi Pratama,andi.pratama@email.com,086789012345,Jl. Pahlawan No. 34,Yogyakarta
-Rahmat Kurniawan,rahmat.kurniawan@email.com,085678901234,Jl. Ahmad Yani 12,Semarang
-Novi Wulandari,novi.w@email.com,087890123456,Jl. Imam Bonjol No. 56,Denpasar
-Andi  Pratama,andi.pratama@email.com,086789012345,Jl. Pahlawan  34,Yogyakarta
-Hendra Wijaya,hendra.wijaya@email.com,088901234567,Jl. Thamrin No. 78,Makassar
-Novi Wulandari,noviwulandari@email.com,087890123456,Jl. Imam Bonjol 56,Denpasar
+Nama Lengkap,Email,No Telepon,Alamat,Kota,Perusahaan,Jabatan
+Budi Santoso,budi.santoso@gmail.com,081234567890,Jl. Sudirman No. 123,Jakarta Selatan,PT Maju Jaya,Manager
+Ahmad Hidayat,ahmad.hidayat@email.co.id,082345678901,Jl. Gatot Subroto No. 45,Bandung,CV Sejahtera,Staff
+Budi  Santoso,budi.santoso@gmail.com,0812-3456-7890,Jl Sudirman No 123,Jakarta Selatan,PT. Maju Jaya,Manager
+Siti Rahayu,siti.rahayu@yahoo.com,083456789012,Jl. Diponegoro No. 67,Surabaya,PT Berkah Abadi,Supervisor
+Ahmad  Hidayat,ahmad_hidayat@email.co.id,(0823) 4567-8901,Jl Gatot Subroto 45,Bandung,CV. Sejahtera,Staff
+Dewi Lestari,dewi.lestari@outlook.com,084567890123,Jl. Merdeka No. 89,Medan,UD Makmur Sentosa,Owner
+Siti  Rahayu,sitirahayu@yahoo.com,0834 5678 9012,Jl. Diponegoro  67,Surabaya,PT. Berkah Abadi,Supervisor
+Rahmat Kurniawan,rahmat.k@perusahaan.com,085678901234,Jl. Ahmad Yani No. 12,Semarang,PT Sentosa Group,Director
+Dewi Lestari,dewilestari@outlook.com,+62-845-6789-0123,Jl Merdeka 89,Medan,UD. Makmur Sentosa,Owner
+Andi Pratama,andi.pratama@company.org,086789012345,Jl. Pahlawan No. 34,Yogyakarta,Koperasi Usaha Bersama,Ketua
+Rahmat Kurniawan,rahmat.kurniawan@perusahaan.com,(0856) 7890-1234,Jl Ahmad Yani 12,Semarang,PT. Sentosa Group,Director
+Novi Wulandari,novi.w@business.net,087890123456,Jl. Imam Bonjol No. 56,Denpasar,Toko Sinar Harapan,Kasir
+Andi  Pratama,andipratama@company.org,0867-8901-2345,Jl Pahlawan  34,Yogyakarta,Koperasi Usaha Bersama,Ketua
+Hendra Wijaya,hendra.wijaya@firma.co.id,088901234567,Jl. Thamrin No. 78,Makassar,Firma Hukum Wijaya,Partner
+Novi Wulandari,noviwulandari@business.net,+62 878 9012 3456,Jl Imam Bonjol 56,Denpasar,Toko Sinar Harapan,Kasir
+Muhammad Fajar,m.fajar@startup.io,089012345678,Jl. Asia Afrika No. 90,Jakarta Pusat,Startup Digital Indonesia,CEO
+Hendra  Wijaya,hendrawijaya@firma.co.id,0889-0123-4567,Jl Thamrin 78,Makassar,Firma Hukum Wijaya,Partner
+Rina Maharani,rina.m@hotel.com,081123456789,Jl. Malioboro No. 11,Yogyakarta,Hotel Bintang Lima,GM
+Muhammad  Fajar,mfajar@startup.io,(0890) 1234-5678,Jl Asia Afrika 90,Jakarta Pusat,Startup Digital Indonesia,CEO
+Agus Setiawan,agus.setiawan@bank.co.id,082234567890,Jl. Veteran No. 22,Surabaya,Bank Nasional Indonesia,Branch Manager
+Rina  Maharani,rinamaharani@hotel.com,0811 2345 6789,Jl Malioboro 11,Yogyakarta,Hotel Bintang Lima,General Manager
+Yanti Susanti,yanti.s@retail.com,083345678901,Jl. Pemuda No. 33,Semarang,Supermarket Fresh Mart,Store Manager
+Agus  Setiawan,agussetiawan@bank.co.id,+62-822-3456-7890,Jl Veteran 22,Surabaya,Bank Nasional Indonesia,Branch Manager
+Bambang Sutrisno,bambang.s@konstruksi.id,084456789012,Jl. Teuku Umar No. 44,Medan,PT Konstruksi Mandiri,Project Manager
+Yanti Susanti,yantisusanti@retail.com,(0833) 4567-8901,Jl Pemuda 33,Semarang,Supermarket Fresh Mart,Store Manager
+Lina Kartika,lina.k@fashion.co.id,085567890123,Jl. Raya Kuta No. 55,Denpasar,Boutique Elegance,Designer
+Bambang  Sutrisno,bambangsutrisno@konstruksi.id,0844-5678-9012,Jl Teuku Umar 44,Medan,PT. Konstruksi Mandiri,Project Manager
+Dedi Hermawan,dedi.h@logistik.com,086678901234,Jl. Slamet Riyadi No. 66,Solo,PT Logistik Nusantara,Operations Head
+Lina  Kartika,linakartika@fashion.co.id,+62 855 6789 0123,Jl Raya Kuta 55,Denpasar,Boutique Elegance,Designer
+Fitri Handayani,fitri.h@pendidikan.or.id,087789012345,Jl. Diponegoro No. 77,Malang,Yayasan Pendidikan Cerdas,Kepala Sekolah
+Dedi  Hermawan,dedihermawan@logistik.com,(0866) 7890-1234,Jl Slamet Riyadi 66,Solo,PT. Logistik Nusantara,Operations Head
+Rudi Hartono,rudi.hartono@manufaktur.co.id,088890123456,Jl. Industri No. 88,Tangerang,PT Manufaktur Prima,Plant Manager
+Fitri Handayani,fitrihandayani@pendidikan.or.id,0877-8901-2345,Jl Diponegoro 77,Malang,Yayasan Pendidikan Cerdas,Kepala Sekolah
+Sri Wahyuni,sri.w@kesehatan.com,089901234567,Jl. Kesehatan No. 99,Bekasi,RS Sehat Sejahtera,Kepala Perawat
+Rudi  Hartono,rudihartono@manufaktur.co.id,+62-888-9012-3456,Jl Industri 88,Tangerang,PT. Manufaktur Prima,Plant Manager
+Anton Wijaya,anton.w@properti.id,081012345678,Jl. Raya Serpong No. 10,Tangerang Selatan,Properti Nusantara,Sales Manager
+Sri  Wahyuni,sriwahyuni@kesehatan.com,(0899) 0123-4567,Jl Kesehatan 99,Bekasi,RS. Sehat Sejahtera,Kepala Perawat
+Maya Sari,maya.sari@media.co.id,082123456789,Jl. Media No. 21,Jakarta Barat,Media Indonesia Group,Editor
+Anton  Wijaya,antonwijaya@properti.id,0810-1234-5678,Jl Raya Serpong 10,Tangerang Selatan,Properti Nusantara,Sales Manager
+Maya  Sari,mayasari@media.co.id,+62 821 2345 6789,Jl Media 21,Jakarta Barat,Media Indonesia Group,Editor
+Tono Suparman,tono.s@pertanian.or.id,083234567890,Jl. Pertanian No. 32,Bogor,Koperasi Tani Makmur,Ketua
+Tono  Suparman,tonosuparman@pertanian.or.id,(0832) 3456-7890,Jl Pertanian 32,Bogor,Koperasi Tani Makmur,Ketua
