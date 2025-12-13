@@ -263,7 +263,7 @@ export default function DedupeInterface() {
                         <ol className={styles.stepsList}>
                             <li><strong>Upload File</strong> — Drag & drop atau klik untuk pilih file Excel/CSV</li>
                             <li><strong>Pilih Kolom</strong> — Tentukan kolom mana yang ingin dicek duplikatnya</li>
-                            <li><strong>Atur Threshold</strong> — Sesuaikan tingkat kemiripan (default 85%)</li>
+                            <li><strong>Atur Threshold</strong> — Sesuaikan tingkat kemiripan (default 75%)</li>
                             <li><strong>Aktifkan NLP</strong> — Mode NLP untuk deteksi cerdas (opsional)</li>
                             <li><strong>Analisis</strong> — Klik tombol untuk menemukan duplikat</li>
                             <li><strong>Pilih Data</strong> — Klik data yang ingin dipertahankan di setiap grup</li>
