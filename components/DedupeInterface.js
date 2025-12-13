@@ -12,7 +12,7 @@ export default function DedupeInterface() {
     const [data, setData] = useState([]);
     const [headers, setHeaders] = useState([]);
     const [selectedColumns, setSelectedColumns] = useState([]);
-    const [threshold, setThreshold] = useState(0.85);
+    const [threshold, setThreshold] = useState(0.75);
     const [duplicateGroups, setDuplicateGroups] = useState([]);
     const [isProcessing, setIsProcessing] = useState(false);
     const [hasAnalyzed, setHasAnalyzed] = useState(false);
@@ -193,7 +193,7 @@ export default function DedupeInterface() {
                             Data duplikat sering kali tidak persis sama. Tools tradisional akan melewatkan duplikat-duplikat seperti:
                         </p>
                         <ul className={styles.featureList}>
-                            <li>📝 <strong>Typo & Spasi</strong> — "Budi Santoso" vs "Budi  Santoso" vs "BudiSantoso"</li>
+                            <li>📝 <strong>Typo & Spasi</strong> —"Budi  Santoso" vs "BudiSantoso"</li>
                             <li>📱 <strong>Format Telepon</strong> — "081234567890" vs "0812-3456-7890" vs "+62 812..."</li>
                             <li>📧 <strong>Variasi Email</strong> — "budi.santoso@" vs "budisantoso@"</li>
                             <li>🏠 <strong>Alamat Singkat</strong> — "Jl. Sudirman No. 123" vs "Jl Sudirman 123"</li>
