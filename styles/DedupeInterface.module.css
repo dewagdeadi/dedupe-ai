@@ -568,3 +568,178 @@
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
+
+.customizedBadge {
+    background: rgba(139, 92, 246, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    color: var(--primary);
+}
+
+/* Results Header */
+.resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Search Box */
+.searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--muted);
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    background: var(--glass-highlight);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.searchInput::placeholder {
+    color: var(--muted);
+}
+
+.searchClear {
+    position: absolute;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.searchClear:hover {
+    background: var(--glass-highlight);
+    color: var(--foreground);
+}
+
+/* Selection Hint */
+.selectionHint {
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Selectable Row */
+.selectable {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.selectable:hover {
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.groupRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.groupRow:last-child {
+    border-bottom: none;
+}
+
+.rowSelector {
+    flex-shrink: 0;
+    padding-top: 0.25rem;
+}
+
+.selectorCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: transparent;
+    transition: all 0.2s;
+    color: white;
+}
+
+.selectorActive {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+}
+
+.rowContent {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.rowBadges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.keeperBadge {
+    background: var(--secondary);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* No Search Results */
+.noSearchResults {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    background: var(--glass-highlight);
+    border-radius: 0.5rem;
+}
+
+/* Override keeper style for new layout */
+.keeper {
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.keeper:hover {
+    background: rgba(16, 185, 129, 0.15);
+}

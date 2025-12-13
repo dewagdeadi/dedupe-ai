@@ -196,3 +196,28 @@ export function getDeduplicatedData(data, groups) {
 
     return data.filter((_, index) => !indicesToRemove.has(index));
 }
+
+/**
+ * Returns rows that should be kept after deduplication with user selection support.
+ * @param {Object[]} data - Original data.
+ * @param {Object[][]} groups - Duplicate groups from findDuplicates.
+ * @param {Object} keeperIndices - Map of groupIndex to rowIndexInGroup to keep.
+ * @returns {Object[]} Deduplicated data.
+ */
+export function getDeduplicatedDataWithSelection(data, groups, keeperIndices = {}) {
+    const indicesToRemove = new Set();
+
+    groups.forEach((group, groupIndex) => {
+        // Get the keeper index for this group (default to 0 = first item)
+        const keeperIndex = keeperIndices[groupIndex] ?? 0;
+
+        // Remove all items except the keeper
+        group.forEach((item, rowIndex) => {
+            if (rowIndex !== keeperIndex) {
+                indicesToRemove.add(item.originalIndex);
+            }
+        });
+    });
+
+    return data.filter((_, index) => !indicesToRemove.has(index));
+}
