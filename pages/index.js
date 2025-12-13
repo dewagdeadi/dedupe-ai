@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DedupeAI - Hapus Data Duplikat Excel dengan Cerdas | Gratis</title>
+        <title>Deduplikasi.id - Hapus Data Duplikat Excel dengan Cerdas | Gratis</title>
         <meta
           name="description"
           content="Aplikasi gratis untuk menghapus data duplikat di file Excel dan CSV. Menggunakan teknologi AI Entity Linkage untuk mendeteksi duplikat yang mirip. Tanpa perlu upload ke server - privasi data terjamin."
@@ -16,11 +16,11 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="DedupeAI" />
+        <meta name="author" content="Deduplikasi.id" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="DedupeAI - Hapus Data Duplikat Excel dengan Cerdas" />
+        <meta property="og:title" content="Deduplikasi.id - Hapus Data Duplikat Excel dengan Cerdas" />
         <meta
           property="og:description"
           content="Aplikasi gratis untuk menghapus data duplikat di file Excel. Menggunakan teknologi AI untuk mendeteksi duplikat yang mirip."
@@ -29,7 +29,7 @@ export default function Home() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DedupeAI - Hapus Data Duplikat Excel dengan Cerdas" />
+        <meta name="twitter:title" content="Deduplikasi.id - Hapus Data Duplikat Excel dengan Cerdas" />
         <meta
           name="twitter:description"
           content="Aplikasi gratis untuk menghapus data duplikat di file Excel. Menggunakan teknologi AI."
@@ -45,7 +45,7 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "DedupeAI",
+              "name": "Deduplikasi.id",
               "description": "Aplikasi untuk menghapus data duplikat di file Excel menggunakan Entity Linkage",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web Browser",

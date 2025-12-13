@@ -92,7 +92,7 @@ export default function DedupeInterface() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <h1 className={styles.title}>DedupeAI</h1>
+                <h1 className={styles.title}>Deduplikasi.id</h1>
                 <p className={styles.subtitle}>
                     Hapus Data Duplikat Excel dengan Teknologi Entity Linkage
                 </p>
@@ -111,14 +111,14 @@ export default function DedupeInterface() {
 
                     {/* SEO Content Section */}
                     <section className={styles.infoSection}>
-                        <h2 className={styles.infoTitle}>Apa itu DedupeAI?</h2>
+                        <h2 className={styles.infoTitle}>Apa itu Deduplikasi.id?</h2>
                         <p className={styles.infoText}>
-                            DedupeAI adalah aplikasi web gratis untuk menghapus data duplikat di file Excel dan CSV.
-                            Berbeda dengan tools lain, DedupeAI menggunakan algoritma <strong>Entity Linkage</strong> yang
+                            Deduplikasi.id adalah aplikasi web gratis untuk menghapus data duplikat di file Excel dan CSV.
+                            Berbeda dengan tools lain, Deduplikasi.id menggunakan algoritma <strong>Entity Linkage</strong> yang
                             dapat mendeteksi duplikat yang tidak persis sama — seperti typo, spasi ganda, atau perbedaan format.
                         </p>
 
-                        <h3 className={styles.infoSubtitle}>Keunggulan DedupeAI:</h3>
+                        <h3 className={styles.infoSubtitle}>Keunggulan Deduplikasi.id:</h3>
                         <ul className={styles.featureList}>
                             <li>✅ <strong>Gratis 100%</strong> — Tanpa biaya, tanpa batasan</li>
                             <li>✅ <strong>Privasi Terjamin</strong> — Data diproses di browser, tidak dikirim ke server</li>
@@ -295,7 +295,7 @@ export default function DedupeInterface() {
 
             {/* Footer */}
             <footer className={styles.footer}>
-                <p>© 2025 DedupeAI — Dibuat dengan ❤️ untuk kemudahan pengelolaan data Anda</p>
+                <p>© 2025 Deduplikasi.id — Dibuat dengan ❤️ untuk kemudahan pengelolaan data Anda</p>
             </footer>
         </div>
     );
