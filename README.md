@@ -19,7 +19,7 @@
 ### Masalah yang Diselesaikan
 
 Data duplikat sering kali tidak persis sama karena:
-- **Typo**: "Budi Santoso" vs "Budi Santoso"
+- **Typo**: "BudiSantoso" vs "Budi Santoso"
 - **Format berbeda**: "081234567890" vs "0812-3456-7890" vs "+62 812 3456 7890"
 - **Singkatan**: "Jl. Sudirman No. 123" vs "Jl Sudirman 123"
 - **Variasi penulisan**: "PT Maju Jaya" vs "PT. Maju Jaya"
