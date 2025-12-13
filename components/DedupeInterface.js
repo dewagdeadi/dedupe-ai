@@ -351,9 +351,13 @@ export default function DedupeInterface() {
                             </span>
                             <span>NLP</span>
                         </label>
-                        <button onClick={handleAnalyze} className="btn-primary" style={{ padding: '0.5rem 1rem' }}>
+                        <button onClick={handleAnalyze} className="btn-secondary" style={{ padding: '0.5rem 1rem' }}>
                             <RefreshCw size={16} style={{ marginRight: '0.25rem' }} />
                             Analisis Ulang
+                        </button>
+                        <button onClick={handleDownload} className="btn-primary" style={{ padding: '0.5rem 1rem' }}>
+                            <Download size={16} style={{ marginRight: '0.25rem' }} />
+                            Download
                         </button>
                     </div>
 
@@ -540,16 +544,6 @@ export default function DedupeInterface() {
                         </div>
                     )}
 
-                    <div className={styles.actions}>
-                        <button onClick={handleAnalyze} className="btn-secondary">
-                            <RefreshCw size={18} style={{ marginRight: '0.5rem' }} />
-                            Analisis Ulang
-                        </button>
-                        <button onClick={handleDownload} className="btn-primary">
-                            <Download size={18} style={{ marginRight: '0.5rem' }} />
-                            Download File Bersih
-                        </button>
-                    </div>
                 </div>
             )}
 
