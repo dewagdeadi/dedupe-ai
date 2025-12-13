@@ -323,6 +323,40 @@ export default function DedupeInterface() {
                         </button>
                     </div>
 
+                    {/* Threshold and NLP controls in results */}
+                    <div className={styles.resultsControls}>
+                        <div className={styles.thresholdControlCompact}>
+                            <span className={styles.thresholdLabel}>Kemiripan:</span>
+                            <input
+                                type="range"
+                                min="0.5"
+                                max="1"
+                                step="0.01"
+                                value={threshold}
+                                onChange={(e) => setThreshold(parseFloat(e.target.value))}
+                                className={styles.thresholdSlider}
+                                aria-label="Atur threshold kesamaan"
+                            />
+                            <span className={styles.thresholdValue}>{Math.round(threshold * 100)}%</span>
+                        </div>
+                        <label className={styles.nlpToggleCompact}>
+                            <input
+                                type="checkbox"
+                                checked={useNLP}
+                                onChange={(e) => setUseNLP(e.target.checked)}
+                                className={styles.toggleInput}
+                            />
+                            <span className={`${styles.toggleSwitchSmall} ${useNLP ? styles.toggleActive : ''}`}>
+                                <Brain size={14} />
+                            </span>
+                            <span>NLP</span>
+                        </label>
+                        <button onClick={handleAnalyze} className="btn-primary" style={{ padding: '0.5rem 1rem' }}>
+                            <RefreshCw size={16} style={{ marginRight: '0.25rem' }} />
+                            Analisis Ulang
+                        </button>
+                    </div>
+
                     <div className={styles.resultsSummary}>
                         <div className={styles.statCard}>
                             <div className={styles.statValue}>{data.length}</div>

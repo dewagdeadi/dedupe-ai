@@ -743,3 +743,67 @@
 .keeper:hover {
     background: rgba(16, 185, 129, 0.15);
 }
+
+/* Results Controls - Compact threshold and NLP in results panel */
+.resultsControls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: var(--glass-highlight);
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.thresholdControlCompact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.nlpToggleCompact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.toggleSwitchSmall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 0.375rem;
+    background: var(--glass-highlight);
+    border: 2px solid var(--border);
+    transition: all 0.3s;
+    color: var(--muted);
+}
+
+.toggleSwitchSmall.toggleActive {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-color: var(--primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .resultsControls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .thresholdControlCompact {
+        width: 100%;
+    }
+
+    .nlpToggleCompact {
+        justify-content: center;
+    }
+}
