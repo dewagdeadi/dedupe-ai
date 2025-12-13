@@ -413,7 +413,6 @@
     border-top: 1px solid var(--border);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -440,4 +439,132 @@
         width: 100%;
         justify-content: center;
     }
+
+    .paginationBottom {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* NLP Toggle */
+.nlpToggle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: 0.75rem;
+    border: 1px solid var(--glass-border);
+}
+
+.toggleLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.toggleInput {
+    display: none;
+}
+
+.toggleSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background: var(--glass-highlight);
+    border: 2px solid var(--border);
+    transition: all 0.3s;
+    color: var(--muted);
+}
+
+.toggleSwitch.toggleActive {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.toggleText {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.toggleHint {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-left: 3.25rem;
+}
+
+/* Pagination */
+.groupsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pageButton {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--glass-highlight);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.pageButton:hover:not(:disabled) {
+    border-color: var(--primary);
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.pageButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pageInfo {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.paginationBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Stats Info */
+.statsInfo {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--glass-highlight);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
