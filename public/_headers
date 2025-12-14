@@ -1,0 +1,14 @@
+/*
+  # Security Headers
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  
+  # CORS - Allow social media platforms to access the site
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: *
+  
+  # Allow embedding and in-app browsers (Instagram, Facebook, etc.)
+  # Note: Removing X-Frame-Options to allow in-app browser access
+  Content-Security-Policy: frame-ancestors 'self' https://*.facebook.com https://*.instagram.com https://*.l.facebook.com;

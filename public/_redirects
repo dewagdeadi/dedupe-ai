@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Ensure trailing slashes work correctly
+/*    /index.html   200
